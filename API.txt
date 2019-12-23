@@ -1,0 +1,38 @@
+USERS
+-------------------------------------------------------------------------------------------------------------
+/                   															= returns all users
+/index          																= returns all users
+/show/[:id]    																	= returns the user with the id
+/new/?name=[:name]&password=[:password]&email=[:email] 							= creates new user
+/edit/[:id]?name=[:name]&password=[:password]&email=[:email] 					= edits the user with the id
+/delete/[:id] 																	= deletes the user with the id
+/projects/[:id] 																= returns the projects of the user
+
+
+PROJECTS
+-------------------------------------------------------------------------------------------------------------
+/?user_id=[:user_id]                   											= returns all projects of the user with the id
+/index/?user_id=[:user_id]          											= returns all projects of the user with the id
+/show/[:id]    																	= returns the project with the id
+/new/?name=[:name]&user_id=[:user_id] 											= creates new project
+/edit/[:id]?name=[:name] 														= edits the project with the id
+/delete/[:id] 																	= deletes the project with the id
+/references/[:id] 																= returns the references of the project
+
+
+REFERENCES
+-------------------------------------------------------------------------------------------------------------
+/?project_id=[:project_id]                   									= returns all references of the project with the id
+/index/?project_id=[:project_id]          										= returns all references of the project with the id
+/show/[:id]    																	= returns the reference with the id
+/new/?reference_type=[:reference_type]&data=[:data]&project_id=[:project_id] 	= creates new reference
+/edit/[:id]?reference_type=[:reference_type]&data=[:data]&project_id[:project_id] = edits the reference with the id
+/delete/[:id] 																	= deletes the reference with the id
+
+
+FAQS
+-------------------------------------------------------------------------------------------------------------
+/                  																= returns all faqs
+/index/         																= returns all faqs
+/voted_good/[:id]    															= votes good for the quesion
+/voted_bad/[:id] 																= votes bad for the question
