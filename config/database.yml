@@ -28,7 +28,7 @@ default: &default
 
 development:
   <<: *default
-  database: d67eevpk9pptjh
+  database: d1rtv1lq7r7m57
   password: 70c567669f400a61a01a483ebd022dbe5ec518c2bfe69cbb4fd56fd6af22b4f6
 
   # The specified database role being used to connect to postgres.

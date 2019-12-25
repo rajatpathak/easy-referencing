@@ -53,6 +53,15 @@ ActiveRecord::Schema.define(version: 20141130115607) do
 
   add_index "projects", ["user_id"], name: "index_projects_on_user_id", using: :btree
 
+  create_table "reference", id: false, force: true do |t|
+    t.integer  "id",             null: false
+    t.string   "reference_type"
+    t.integer  "project_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.text     "data"
+  end
+
   create_table "references", force: true do |t|
     t.string   "reference_type"
     t.integer  "project_id"
