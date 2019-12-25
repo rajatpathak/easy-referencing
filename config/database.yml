@@ -17,10 +17,10 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  host: ec2-54-247-64-35.eu-west-1.compute.amazonaws.com
-  username: yfcnhgfmzgwtpu
-  database: d67eevpk9pptjh
-  password: wEuS9uAgbTluHDm85hqRqerNpD
+  host: ec2-174-129-254-218.compute-1.amazonaws.com
+  username: wmsvazatjjqwyn
+  database: d1rtv1lq7r7m57
+  password: 70c567669f400a61a01a483ebd022dbe5ec518c2bfe69cbb4fd56fd6af22b4f6
 
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
@@ -29,7 +29,7 @@ default: &default
 development:
   <<: *default
   database: d67eevpk9pptjh
-  password: wEuS9uAgbTluHDm85hqRqerNpD
+  password: 70c567669f400a61a01a483ebd022dbe5ec518c2bfe69cbb4fd56fd6af22b4f6
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -63,7 +63,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: d67eevpk9pptjh
+  database: d1rtv1lq7r7m57
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -86,7 +86,7 @@ test:
 #
 production:
   <<: *default
-  database: d67eevpk9pptjh
-  username: yfcnhgfmzgwtpu
+  database: d1rtv1lq7r7m57
+  username: wmsvazatjjqwyn
   # password: <%= ENV['REFERENCE-APPI_DATABASE_PASSWORD'] %>
-  password: wEuS9uAgbTluHDm85hqRqerNpD
+  password: 70c567669f400a61a01a483ebd022dbe5ec518c2bfe69cbb4fd56fd6af22b4f6
